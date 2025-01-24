@@ -1,4 +1,4 @@
-# DBT Ticketing Data Project
+# DBT ITSM Project
 
 This project involves transforming raw ticket data into actionable insights by cleaning, aggregating, and summarizing the data. The project uses DBT to manage the data transformations and build models.
 
