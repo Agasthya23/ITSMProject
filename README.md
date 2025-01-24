@@ -80,3 +80,27 @@ You need to install DBT to run the models. You can install DBT using pip:
 
 ```bash
 pip install dbt
+```
+### 2. Install DBT
+DBT requires a database connection to run the models. You will need to configure the profiles.yml file to point to your database.
+```bash
+your_project_name:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: your-database-host
+      user: your-username
+      password: your-password
+      dbname: your-database-name
+      schema: public
+```
+### 3. Install Project Dependencies
+```bash
+dbt deps
+```
+### 4. Run DBT Models
+```bash
+dbt run
+```
+
